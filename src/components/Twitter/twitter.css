@@ -1,0 +1,13 @@
+.twitter-container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background: black;
+	flex-direction: column;
+}
+
+.twitter-heading{
+	color: var(--accent-1);
+}

@@ -1,0 +1,80 @@
+:root{
+	--accent-1: #288a42;
+	--accent-2: #8A2870;
+	--background-1: #DFF0D8;
+	--background-2: #0f3b1b;
+}
+
+.home-container{
+	/*transform: translateY(5rem);*/
+	padding-top: 5rem;
+	height: 60vh;
+	background-color: #0f3b1b;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	margin-bottom: 7rem;
+}
+
+.home-illustrations{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	position: relative;
+	top: 2rem;
+	left: 6rem;
+	transform: perspective(500px) rotateX(10deg) rotateY(10deg);
+}
+
+.left{
+	transform: translateX(-20rem);
+}
+
+.health-image{
+	width: 16rem;
+}
+
+.home-content{
+	/*background-color: green;*/
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 0 2.5rem;
+	margin-top: -5rem;
+}
+
+.home-heading{
+	color: white;
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.home-subheading{
+	color: white;
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 2.5rem 0;
+}
+
+@media screen and (max-width: 960px){
+	.home-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 2rem;
+		padding-top: 8rem;
+	}
+
+	.home-illustrations{
+		display: none;
+	}
+
+	.home-content{
+		align-items: center;
+	}
+
+	.home-subheading{
+		text-align: center;
+		font-size: 1.75rem
+	}
+}
